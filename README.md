@@ -27,7 +27,7 @@ Besides, both input and output of this function should be decoded as unicode.
 
 Thanks Matrix67's [article](http://www.matrix67.com/blog/archives/5044)
 
-## Find—new-words part
+## Find_new_words part
 
 Functions:
 Find new words and only keep good quality words.
