@@ -43,3 +43,7 @@ Find new words and only keep good quality words.
 aggregation，entropy和appear rate参数均可调，试验次数越多，覆盖范围越广新词的质量越好，如追求高精确率（precision）则可适当调高appear rate进行更严格的删选；追求高召回率（recall）和降低appear rate使结果包括更多新词。
 
 实例请参考example notebook。函数说明请参照fliter_new.py
+
+例子中还会有很多不合理的词比如“XX的”，“XX了”，“一XX”等等，可以通过微调appear rate或者通过模式匹配的后处理进行过滤。但在今后的使用中不排除符合相同模式的新词出现，比如‘好好的’，‘一点点’等，所以后处理不能作为必要操作，以免在今后调用中误删新词。
+
+新的模块没有修改之前已有的文件，同时留了大部分参数的接口，详细请参照wordseg/fliter_new.py
