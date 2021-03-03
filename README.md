@@ -40,7 +40,7 @@ Find new words and only keep good quality words.
 
 接上例：假设新词字典中最高出现的次数为140，key为‘滴滴’，此时appear rate设置为默认值0.5，则出现次数小于等于70的所有新词会被过滤掉，只有剩下的会存进新词列表new_word。
 
-aggregation，entropy和appear rate参数均可调，试验次数越多，覆盖范围越广新词的质量越好，如追求高精确率（precision）则可适当调高appear rate进行更严格的删选；追求高召回率（recall）和降低appear rate使结果包括更多新词。
+aggregation，entropy和appear rate参数均可调，试验次数越多，覆盖范围越广新词的质量越好，如追求高精确率（precision）则可适当调高appear rate进行更严格的删选；追求高召回率（recall）可降低appear rate使结果包括更多新词。
 
 实例请参考example notebook。函数说明请参照fliter_new.py
 
